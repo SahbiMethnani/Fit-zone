@@ -16,3 +16,5 @@ Le projet utilise des modules  : il ne fonctionne pas en double-clique simple:
 ou bien avec:
 
     npx serve .
+
+lien :https://real-fit-zone.netlify.app/
