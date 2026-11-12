@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitZone – Musculation & MMA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Fit<span>Zone</span></h1>
+    <nav>
+      <button class="tab hidden" data-tab="exercices">Exercices</button>
+      <button class="tab hidden" data-tab="muscu">Actus Muscu</button>
+      <button class="tab hidden" data-tab="mma">Actus MMA</button>
+      <button class="tab hidden" data-tab="fighters">Combattants</button>
+    </nav>
+  </header>
+
+  <main>
+    <p id="etat" class="message">Chargement des sources…</p>
+
+    <section id="exercices" class="panel">
+      <div class="toolbar">
+        <select id="categorie">
+          <option value="">Tous les muscles</option>
+          <option value="11">Pectoraux</option>
+          <option value="12">Dos</option>
+          <option value="13">Épaules</option>
+          <option value="8">Bras</option>
+          <option value="10">Abdominaux</option>
+          <option value="9">Jambes</option>
+          <option value="14">Mollets</option>
+        </select>
+        <input id="filtre" type="search" placeholder="Filtrer par nom...">
+      </div>
+      <div id="liste-exercices" class="grid"></div>
+    </section>
+
+    <section id="muscu" class="panel">
+      <div id="chips-muscu" class="chips"></div>
+      <div id="liste-muscu" class="grid"></div>
+    </section>
+
+    <section id="mma" class="panel">
+      <div id="chips-mma" class="chips"></div>
+      <div id="liste-mma" class="grid"></div>
+    </section>
+
+    <section id="fighters" class="panel">
+      <form id="form-fighter" class="toolbar">
+        <input id="nom-fighter" type="search" placeholder="Nom d'un combattant (ex : Islam Makhachev)">
+        <button type="submit">Rechercher</button>
+      </form>
+      <div id="liste-fighters" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>Sources actives : <span id="sources-ok">—</span></footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
