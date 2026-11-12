@@ -12,6 +12,7 @@ Le projet utilise des modules  : il ne fonctionne pas en double-clique simple:
 
     cd fitzone
     python -m http.server 5500
+
 ou bien avec:
 
-  npx serve .
+    npx serve .
