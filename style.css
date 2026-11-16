@@ -9,10 +9,10 @@
   --text: #ecedf0;
   --text-muted: #a3a9b8;
   --text-faint: #7d8496;
-  --accent: #e63946;
-  --accent-hover: #f0525e;
-  --accent-soft: rgba(230, 57, 70, 0.14);
-  --accent-text: #ff7a85;
+  --accent: #3976e6;
+  --accent-hover: #0f0ce6;
+  --accent-soft: rgba(64, 141, 135, 0.14);
+  --accent-text: #0ed5f0;
 
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-title: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
@@ -79,6 +79,7 @@ h1 span { color: var(--accent); }
 h2, h3 { font-family: var(--font-title); letter-spacing: 0.01em; }
 
 nav { display: flex; gap: 6px; flex-wrap: wrap; }
+menu { display: flex; gap: 12px; flex-wrap: wrap; }
 
 .tab,
 button {
@@ -153,6 +154,11 @@ select { cursor: pointer; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
+  grid-auto-rows: 1fr;
+  keyframes grid-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
 }
 
 .card {
